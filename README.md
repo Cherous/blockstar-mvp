@@ -79,3 +79,13 @@ If you don’t have environment variables set up yet, you can still run the fron
 - Keep UI changes scoped and MVP-friendly (avoid large refactors unless needed).
 - Prefer incremental wiring: mock → API → persistence.
 - Security-sensitive work (auth, wallet, transactions) should be reviewed carefully.
+
+## TypeScript
+
+TypeScript is available for both the frontend (`src/`) and backend (`server/`). You can author new files as `.ts` or `.tsx` alongside existing `.js`/`.jsx` files.
+
+- **Frontend config**: `tsconfig.json` (root)
+- **Backend config**: `server/tsconfig.json`
+- **Type-check**: `npm run typecheck`
+
+Existing JavaScript files do not need to be migrated — TypeScript is opt-in per file.
